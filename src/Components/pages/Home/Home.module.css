@@ -1,0 +1,21 @@
+.home {
+  background-color: black;
+  position: relative;
+}
+
+.home img {
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 15rem;
+  left: 5rem;
+}
+
+.content span {
+  color: rgb(206, 28, 28);
+}
