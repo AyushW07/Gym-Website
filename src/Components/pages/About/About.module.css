@@ -1,0 +1,68 @@
+.aboutContainer {
+  background-color: black;
+}
+
+.about {
+  display: flex;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+.content {
+  margin-left: 4rem;
+}
+
+.content > button {
+  height: 2.5rem;
+  width: 6rem;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-right: 5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.content > h1 {
+  color: red;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.content > p {
+  color: white;
+}
+
+.about h1 {
+  color: red;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  margin-right: 2rem;
+  color: white;
+}
+
+.chooseContent {
+  margin-right: 2rem;
+}
+
+.chooseContent > h1 {
+  color: red;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+ul li strong {
+  color: white;
+  font-size: 1.5rem;
+}

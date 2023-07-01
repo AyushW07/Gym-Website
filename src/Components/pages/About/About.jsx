@@ -29,8 +29,8 @@ function About() {
         </div>
       </div>
 
-      <div className={styles.about}>
-        <div>
+      <div className={styles.choose}>
+        <div className={styles.chooseContent}>
           <h1>Why Choose Us ?</h1>
           <ul>
             <li>
