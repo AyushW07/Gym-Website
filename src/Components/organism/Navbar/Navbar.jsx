@@ -19,7 +19,7 @@ function Navbar() {
             <a href="#program">Program</a>
           </li>
           <li>
-            <a href="#training">Training</a>
+            <a href="#trainer">Trainer</a>
           </li>
           <li>
             <a href="#pricing">Pricing</a>

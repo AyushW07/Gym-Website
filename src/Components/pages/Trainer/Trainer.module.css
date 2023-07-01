@@ -1,0 +1,43 @@
+.trainer > h1 {
+  color: red;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+}
+
+.trainer p {
+  font-size: 0.9rem;
+  color: white;
+  margin: 0;
+  margin-left: 24rem;
+  margin-right: 24rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trainer > span {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
+.card > h3 {
+  color: white;
+  margin: 0;
+}
+
+.card > p {
+  color: white;
+  margin: 0;
+}
