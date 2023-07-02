@@ -1,7 +1,10 @@
 import React from "react";
 import styles from "./Pricing.module.css";
+import { useNavigate } from "react-router-dom";
 
 function Pricing() {
+  const navigate = useNavigate();
+
   return (
     <div id="pricing" className={styles.pricingContainer}>
       <h1>Our Membership Plans</h1>
@@ -14,7 +17,14 @@ function Pricing() {
             <li>Group fitness classes</li>
             <li>Online workout library</li>
           </ul>
-          <button className={styles.btn}>Sign Up Now</button>
+          <button
+            className={styles.btn}
+            onClick={() => {
+              navigate("/register");
+            }}
+          >
+            Sign Up Now
+          </button>
         </div>
 
         <div className={styles.plan}>
@@ -25,7 +35,14 @@ function Pricing() {
             <li>Personal training sessions (2 per month)</li>
             <li>Access to sauna and spa</li>
           </ul>
-          <button className={styles.btn}>Sign Up Now</button>
+          <button
+            className={styles.btn}
+            onClick={() => {
+              navigate("/register");
+            }}
+          >
+            Sign Up Now
+          </button>
         </div>
 
         <div className={styles.plan}>
@@ -36,7 +53,14 @@ function Pricing() {
             <li>Ultimate personal training sessions</li>
             <li>Special discount on merchandise</li>
           </ul>
-          <button className={styles.btn}>Sign Up Now</button>
+          <button
+            className={styles.btn}
+            onClick={() => {
+              navigate("/register");
+            }}
+          >
+            Sign Up Now
+          </button>
         </div>
       </div>
     </div>

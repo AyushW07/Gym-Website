@@ -25,7 +25,9 @@ function About() {
             empower individuals to lead healthier lives, reach their fitness
             goals, and discover their true potential.
           </p>
-          <button className={styles.btn}>Learn More</button>
+          <button className={styles.btn} onClick={() => alert("clicked")}>
+            Learn More
+          </button>
         </div>
       </div>
 
