@@ -5,6 +5,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Team from "./Components/molecules/Team/Team";
+import Register from "./Components/molecules/Register/Register";
+import Login from "./Components/molecules/Login/Login";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -13,6 +15,8 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   </React.StrictMode>

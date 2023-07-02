@@ -1,8 +1,11 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 import logo from "../../../assests/logo.png";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <nav className={styles.navbar}>
@@ -25,7 +28,14 @@ function Navbar() {
             <a href="#pricing">Pricing</a>
           </li>
         </ul>
-        <button className={styles.btn}>Join Us</button>
+        <button
+          className={styles.btn}
+          onClick={() => {
+            navigate("/register");
+          }}
+        >
+          Join Us
+        </button>
       </nav>
     </div>
   );
