@@ -56,8 +56,10 @@ function Trainer() {
           </div>
         ))}
       </div>
-      <div className={styles.btn}>
-        <button onClick={handleClick}>See Whole Team</button>
+      <div>
+        <button className={styles.btn} onClick={handleClick}>
+          See Whole Team
+        </button>
       </div>
     </div>
   );

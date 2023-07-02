@@ -1,0 +1,37 @@
+.footerContainer {
+  color: white;
+  background-color: red;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.section h4 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.copy {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.copy p {
+  margin: 0;
+  padding-bottom: 1rem;
+}

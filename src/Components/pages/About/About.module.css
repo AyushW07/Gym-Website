@@ -11,7 +11,7 @@
   margin-left: 4rem;
 }
 
-.content > button {
+.btn {
   height: 2.5rem;
   width: 6rem;
   background-color: red;
@@ -21,6 +21,13 @@
   margin-right: 5rem;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.btn:hover {
+  background-color: black;
+  border: 1px solid red;
 }
 
 .content > h1 {
