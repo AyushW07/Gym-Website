@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Register.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Register() {
   const [name, setName] = useState("");
@@ -8,6 +8,8 @@ function Register() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState({});
+
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -40,13 +42,24 @@ function Register() {
       password,
     };
 
+    const existingUser = localStorage.getItem("user");
+    if (existingUser) {
+      const exist = JSON.parse(existingUser);
+      if (exist.email === email) {
+        alert("You are already registered. Please proceed to login page.");
+        navigate("/login");
+        return;
+      }
+    }
+
     localStorage.setItem("user", JSON.stringify(user));
 
     alert("Registration Successfull!");
+    navigate("/login");
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form>
       <label htmlFor="name">Name:</label>
       <input
         type="text"
@@ -57,7 +70,7 @@ function Register() {
       />
       {error.name && <p className={styles.error}>{error.name}</p>}
 
-      <label htmlFor="name">Email:</label>
+      <label htmlFor="email">Email:</label>
       <input
         type="email"
         id="email"
@@ -67,7 +80,7 @@ function Register() {
       />
       {error.email && <p className={styles.error}>{error.email}</p>}
 
-      <label htmlFor="name">Password:</label>
+      <label htmlFor="password">Password:</label>
       <input
         type="password"
         id="password"
@@ -77,7 +90,7 @@ function Register() {
       />
       {error.password && <p className={styles.error}>{error.password}</p>}
 
-      <label htmlFor="name">Confirm Password:</label>
+      <label htmlFor="confirm-password">Confirm Password:</label>
       <input
         type="password"
         id="confirm-password"
@@ -89,9 +102,14 @@ function Register() {
         <p className={styles.error}>{error.confirmPassword}</p>
       )}
 
-      <button type="submit">Register</button>
+      <button type="submit" onClick={handleSubmit}>
+        Register
+      </button>
       <h3>
-        Already have an account? <Link to="/login">Login</Link>
+        Already have an account ?{" "}
+        <Link className={styles.link} to="/login">
+          Login
+        </Link>
       </h3>
     </form>
   );

@@ -1,3 +1,55 @@
 form {
   color: white;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid red;
+  border-radius: 0.5rem;
+  background-color: black;
+  color: white;
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+form h3 {
+  text-align: center;
+}
+
+.link {
+  color: red;
+}
+
+button {
+  display: block;
+  height: 2.5rem;
+  width: 6rem;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  margin-right: 5rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+button:hover {
+  background-color: black;
+  border: 1px solid red;
 }
