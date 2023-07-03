@@ -5,7 +5,7 @@ function About() {
   return (
     <div id="about" className={styles.aboutContainer}>
       <div className={styles.about}>
-        <div className={styles.video}>
+        <div className={styles.video1}>
           <iframe
             width="660"
             height="415"
@@ -59,7 +59,7 @@ function About() {
           </ul>
         </div>
 
-        <div className={styles.video}>
+        <div className={styles.video2}>
           <iframe
             width="660"
             height="415"

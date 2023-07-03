@@ -27,6 +27,11 @@ input {
   margin-bottom: 1rem;
 }
 
+form h2 {
+  color: red;
+  text-align: center;
+}
+
 form h3 {
   text-align: center;
 }
@@ -52,4 +57,24 @@ button {
 button:hover {
   background-color: black;
   border: 1px solid red;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  form {
+    max-width: 80%;
+    padding: 1rem;
+  }
+
+  label {
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    margin-bottom: 0.5rem;
+  }
+
+  button {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

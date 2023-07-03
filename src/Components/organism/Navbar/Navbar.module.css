@@ -49,3 +49,85 @@
   background-color: black;
   border: 1px solid red;
 }
+
+.menubar {
+  display: none;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .navbar {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .menubar {
+    display: block;
+  }
+
+  .close {
+    display: none;
+    color: white;
+    font-size: 3rem;
+  }
+
+  .menu {
+    color: white;
+    font-size: 3rem;
+    margin-right: 2rem;
+  }
+
+  .homeLogo img {
+    margin-left: 0.5rem;
+  }
+
+  .active .menu {
+    display: none;
+  }
+
+  .active .close {
+    display: block;
+    margin-right: 2rem;
+  }
+
+  .active .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+    top: 4.5rem;
+    background-color: black;
+    text-align: center;
+    right: 1rem;
+    height: 100vh;
+    padding: 40px 10px 0 0;
+  }
+
+  .active .links li {
+    width: 14rem;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    margin-top: 0;
+  }
+
+  .active .btn {
+    display: block;
+    z-index: 999;
+    position: absolute;
+    top: 35rem;
+    right: 1rem;
+  }
+}

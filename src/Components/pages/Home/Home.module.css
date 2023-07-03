@@ -19,3 +19,19 @@
 .content span {
   color: rgb(206, 28, 28);
 }
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .content {
+    font-size: 1.5rem;
+    top: 8rem;
+    left: 2rem;
+  }
+
+  .content h1 {
+    text-align: center;
+  }
+
+  .home {
+    height: 700px;
+  }
+}
