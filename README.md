@@ -25,5 +25,6 @@ This project is a clone of a gym website. It aims to replicate the design and fu
 
 ## Deployment Link 
 
+gym-website-ayush-xi.vercel.app
 
 
