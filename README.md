@@ -2,6 +2,10 @@
 
 This project is a clone of a gym website. It aims to replicate the design and functionality of the original website. It includes multiple pages, such as the home page, about us page, training programs page, and contact page. The website is designed to be responsive and user-friendly.
 
+## Deployment Link 
+
+Demo : https://gym-website-ayush-xi.vercel.app
+
 ## Features
 
 - Responsive design for mobile and desktop
@@ -22,9 +26,5 @@ This project is a clone of a gym website. It aims to replicate the design and fu
 - React Icons
 - React-Youtube
 - Responsive Carousel
-
-## Deployment Link 
-
-Demo : https://gym-website-ayush-xi.vercel.app
 
 
